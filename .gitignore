@@ -1,0 +1,41 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.triton/
+
+# Generated tensors, reports, and performance traces
+*.pt
+*.pth
+*.safetensors
+results/
+*.prof
+*.ncu-rep
+
+# Credentials and machine-specific configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.claude/
+.codex/
+.idea/
+.vscode/
+
+# Do not add benchmark packages, evaluation material, or private work records
+*.zip
+*.tar
+*.tar.gz
+*.pdf
+author-checks/
+*trajector*/
+*offline-trials*/
+logs/
+.DS_Store
+Thumbs.db

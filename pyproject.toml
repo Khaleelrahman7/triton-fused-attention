@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools==75.3.0", "wheel==0.44.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "triton-fused-attention-dev"
+version = "0.1.0"
+description = "Stride-aware Triton attention with masking, ragged lengths, and a validation CLI"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "torch==2.5.1",
+    "numpy==1.26.4",
+    "triton==3.1.0; platform_system == 'Linux'",
+]
+
+[project.scripts]
+attention-validate = "fused_attention.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["fused_attention*"]

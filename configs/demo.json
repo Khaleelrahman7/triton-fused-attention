@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "atol": 0.005,
+  "rtol": 0.005,
+  "cases": [
+    {
+      "id": "prefill",
+      "causal": true
+    },
+    {
+      "id": "ragged-padding",
+      "causal": false,
+      "scale": 0.25
+    }
+  ]
+}
