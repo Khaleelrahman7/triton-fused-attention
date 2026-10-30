@@ -110,3 +110,5 @@ This repository deliberately excludes external evaluation harnesses, scoring
 scripts, model rollout exports, task-upload archives, platform guidelines,
 review receipts, and private work records. No open-source license is selected
 in this snapshot; public visibility alone does not grant reuse rights.
+
+This project was developed through an AI-assisted engineering workflow using Claude Code, with human direction over the architecture, debugging strategy, edge-case design, and verification. The work emphasized iterative diagnosis and executable regression tests rather than one-shot code generation.
